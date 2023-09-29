@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ========== ======= ========== */
+/* ========== GENERAL ========== */
+/* ========== ======= ========== */
+
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: #141416;
+  color: #fff;
+}
+.section{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.wrapper{
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ========== ======= ========== */
+/* ========== TEXT ========== */
+/* ========== ======= ========== */
+
+p,
+a, 
+span{
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+h2{
+  font-size: 6rem;
+}
+a{
+  text-decoration: none;
+  color: yellow;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/* ========== ============== ========== */
+/* ========== HOME - SECTION ========== */
+/* ========== ============== ========== */
+.home-wrapper{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.hero-text{
+  text-align: center;
+  line-height: 0;
+}
+
+#alternance,
+#alternance span{
+  color: yellow;
+  font-size: 10rem;
+  line-height: 15rem;
+  text-transform: uppercase;
+  font-weight: 900;
+
+  text-shadow: 1px 1px 1px#ffff00,
+      1px 3px 1px #ffff00,
+      1px 4px 1px #ffff00,
+      1px 5px 1px #ffff00,
+      1px 6px 1px #ffff00,
+      1px 7px 1px #ffff00,
+      1px 8px 1px #ffff00,
+      1px 9px 1px #ffff00,
+      1px 10px 1px #ffff00,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4);
+
+  /* text-shadow: 1px 1px 1px #919191,
+      1px 2px 1px #919191,
+      1px 3px 1px #919191,
+      1px 4px 1px #919191,
+      1px 5px 1px #919191,
+      1px 6px 1px #919191,
+      1px 7px 1px #919191,
+      1px 8px 1px #919191,
+      1px 9px 1px #919191,
+      1px 10px 1px #919191,
+  1px 18px 6px rgba(16,16,16,0.4),
+  1px 22px 10px rgba(16,16,16,0.2),
+  1px 25px 35px rgba(16,16,16,0.2),
+  1px 30px 60px rgba(16,16,16,0.4); */
+
+  animation: textBlinking 2s infinite 4s;
+  opacity: .5;
+}
+.hero-text span{
+  font-size: 7rem;
+}
+.text-wrapper{
+  padding: 3rem 0;
+}
+.hero-text span{
+  line-height: 0;
+}
+
+
+/* ========== =============== ========== */
+/* ========== ABOUT - SECTION ========== */
+/* ========== =============== ========== */
+
+.about-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border: 1px solid #fff; */
+}
+.about-title{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+
+  max-width: 50%;
+}
+.about-title span{
+  color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  width: fit-content;
+}
+.about-text{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2.5rem;
+  text-align: justify;
+
+  max-width: 50%;
+}
+.about-wrapper img{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: .3;  
+}
+.typewriter{
+  color: yellow;
+  overflow: hidden;
+  position: relative;
+  max-width: fit-content;
+  animation: writer 7s infinite;  
+}
+.typewriter::before{
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border: 1px solid rgba(255, 255, 0, 1);
+  animation: blinking 1s infinite;
+}
+
+/* ========== ================ ========== */
+/* ========== SKILLS - SECTION ========== */
+/* ========== ================ ========== */
+
+.skills-wrapper{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 3.5rem;
+}
+.skills-title{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.skills-title span{
+  color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  width: fit-content;
+}
+.skills-text{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  text-align: center;
+}
+.skills-img{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding-top: 2rem;
+}
+.img-skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 6.5rem;
+}
+.path-javascript:hover{
+  fill: yellow;
+}
+.path-html:hover{
+  fill: #F1652A;
+}
+.path-css:hover{
+  fill: #2965F1;
+}
+.path-php:hover{
+  fill: #7378AF;
+}
+.path-git:hover{
+  fill: #E84E31;
+}
+.path-vscode:hover{
+  fill: #0071B9;
+}
+
+/* ========== ================= ========== */
+/* ========== CONTACT - SECTION ========== */
+/* ========== ================= ========== */
+
+.contact-wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.contact-content{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.contact-text{
+  text-align: center;
+}
+#earth-canvas{
+  width: 500px;
+  height: 250px;
+}
+.contact-content .button{
+  width: 10rem;
+}
+
+
+/* ========== ======== ========== */
+/* ========== KEYFRAMES ========== */
+/* ========== ======== ========== */
+
+
+@keyframes writer{
+  from{
+    width: 0;
+  }
+  25%{
+    width: 50%;
+  }
+  50%{
+    width: fit-content;
+  }
+  75%{
+    width: 50%;
+  }
+  to{
+    width: 0;
+  }
+}
+@keyframes blinking{
+  from{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+@keyframes textBlinking{
+  from{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 1;
+  }
+  to{
+    opacity: 0.5;
+  }
+}
+
+
+/* ========== ======== ========== */
+/* ========== OVERLAYS ========== */
+/* ========== ======== ========== */
+.overlay{
+  width: 12.5rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.overlay a {
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ========== OVERLAY RIGHT ========== */
+.overlay-right{
+  right: 0;
+  margin: 5rem 5rem 5rem 0;
+  z-index: 100;
+
+  /* border: 1px solid #fff; */
+}
+.button{
+  width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+}
+.button:hover{
+  background-color: #fff;
+  color: #000;
+}
+.overlay-right nav{
+  align-self: flex-end;
+  border-right: 1px solid #ffffff46;
+}
+.overlay-right li{
+  list-style: none;
+  color: #fff;
+  padding: 1rem;
+  /* border: 1px dashed #fff; */
+}
+.overlay-right li:hover{
+  border-right: 2px solid #fff;
+}
+li[data-menuanchor].active {
+  border-right: 2px solid #fff;
+}
+#goTo{
+  text-align: right;
+}
+#goTo:hover{
+  text-decoration: underline;
+  color: yellow;
+}
+
+/* ========== OVERLAY LEFT ========== */
+.overlay-left{
+  left: 0;
+  margin: 5rem 0rem 5rem 5rem;
+  z-index: 100;
+
+  /* border: 1px solid #fff; */
+}
+.socials-links img{
+  width: 5rem;
+}
+h1, .jeremy-btn{
+  font-size: 3rem;
+  width: 11%;
+  overflow: hidden;
+  transform: translate(1rem);
+}
+h1::before{
+  content: "<";
+  color: yellow;
+  animation: blinking 2s infinite;
+}
+h1::after{
+  content: "/>";
+  color: yellow;
+}
+.title a:hover h1{
+  width: 100%;
+  transition: all 2s linear;
+}
+
+
+object{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1350px){
+  .wrapper{
+    max-width: 900px;
+  }
+  .contact-wrapper{
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1130px){
+  html{
+    font-size: 50%;
+  }
+  .wrapper{
+    max-width: 700px;
+  }
+}
+@media screen and (max-width: 900px){
+  html{
+    font-size: 40%;
+  }
+  .wrapper{
+    max-width: 450px;
+  }
+  .about-wrapper{
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .about-title, .about-text{
+    max-width: 100%;
+  }
+  .about-title{
+    flex-flow: row wrap;
+  }
+  .skills-wrapper h2{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px){
+  #menu{
+    display: none;
+  }
+  #earth-canvas{
+    overflow: hidden;
+    transform: translateX(-4rem);
+  }
+}
+@media screen and (max-width: 490px){
+  html{
+    font-size: 35%;
+  }
+  .wrapper{
+    max-width: 300px;
+  }
+  .home-wrapper{
+    max-width: 100%;
+  }
+  #earth-canvas{
+    transform: translateX(8px);
+    margin-bottom: 20px;
+  }
+}
